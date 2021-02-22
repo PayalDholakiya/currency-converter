@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Currency Converter</title>
+  </head>
+  <body>
+    <h1>Currency Converter</h1>
+    <input
+      type="text"
+      placeholder="Enter Amount"
+      id="Amount"
+      style="margin-left: 47%"
+    />
+    <div id="currency1" class="center">
+      <select id="currency" style="width: 30%">
+        <option value="INR">INR</option>
+        <option value="GBP">GBP</option>
+        <option value="EUR">EUR</option>
+      </select>
+      <span>To</span>
+      <select id="to_currency" style="width: 30%">
+        <option value="INR">INR</option>
+        <option value="GBP">GBP</option>
+        <option value="EUR">EUR</option>
+      </select>
+      <div class="button">
+        <input
+          id="button"
+          type="button"
+          value="covert"
+          style="margin-left: 21%"
+          onclick="result();"
+        />
+      </div>
+      <div id="result">
+        <h1></h1>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
